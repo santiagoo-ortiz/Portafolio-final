@@ -152,6 +152,10 @@
   font-weight: bold;
 }
 
+.sobre-mi a{
+  text-decoration: none;
+}
+
 .sobre-mi button{
   cursor: pointer;
   background-color: transparent;
