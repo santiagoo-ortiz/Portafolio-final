@@ -17,23 +17,24 @@
                 <a href="#">Santiago</a>
             </div>
      
-            <nav>
+            <nav id="nav" >
                 <ul>
-                    <li> <a href="#inicio"> Inicio </a> </li>
-                    <li> <a href="#sobremi"> Sobre mi </a> </li>
-                    <li> <a href="#habilidades"> Habilidades </a> </li>
-                    <li> <a href="#proyectos"> Proyectos </a> </li>
-                    <li> <a href="#contacto"> Contacto </a> </li>
+                    <li> <a href="#inicio" onclick="seleccionar()"> Inicio </a> </li>
+                    <li> <a href="#sobre-mi" onclick="seleccionar()"> Sobre mi </a> </li>
+                    <li> <a href="#habilidades" onclick="seleccionar()"> Habilidades </a> </li>
+                    <li> <a href="#curriculum" onclick="seleccionar()"> Curriculum </a> </li>
+                    <li> <a href="#portafolio" onclick="seleccionar()"> Portafolio </a> </li>
+                    <li> <a href="#contacto" onclick="seleccionar()"> Contacto </a> </li>
                 </ul>
             </nav>
 
-            <div class="font-bars" >
+            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
          
         </header>
 
-        <section class="inicio">
+        <section class="inicio" id="inicio" >
 
             <div class="banner-cont">
                 <div class="img-cont-banner">
@@ -42,8 +43,8 @@
                 <h1> Ivan Santiago Cubides Ortiz </h1>
                 <h2> Desarrollador Full-Stack </h2>
                 <div class="links-redes" >
-                    <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                    <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/santiagoo-ortiz"> <i class="fa-brands fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/ivan-santiago-cubides-ortiz-70180724b"> <i class="fa-brands fa-linkedin"></i> </a>
                 </div>
                 
                 
@@ -54,8 +55,10 @@
         </section>
 
         
+    </div>
 
-        <section class="sobre-mi">
+    
+        <section class="sobre-mi" id="sobre-mi">
 
             <div class="contenido-seccion"> 
 
@@ -64,8 +67,8 @@
                 <p> <span> Hola, soy Santiago Cubides. </span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam non ut possimus quis, voluptatibus vel natus illo iste sequi nostrum repudiandae laudantium sed repellat voluptatem architecto fugit harum? Eos non qui hic. </p>
 
                 <div>
-                    <button>
-                        Descargar CV <i class="fa-solid fa-arrow-down-to-line"></i>
+                    <button class="overlay-button">
+                        Descargar CV <i class="fa-solid fa-download"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
@@ -75,7 +78,256 @@
 
         </section>
 
-    </div>
+  
+
+        <section class="habilidades" id="habilidades">
+
+            <div class="contenido-seccion">
+
+                <h2>Habilidades</h2>
+                
+                <div class="fila">
+
+                    <div class="columna">
+                        
+                        <h3>Habilidades tecnicas</h3>
+
+                        <div class="contenedor-habilidades">
+
+                            <div class="skill">
+                                <i class="fa-brands fa-js"></i>
+                                <span>Javascript</span>  
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML</span>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-brands fa-react"></i>
+                                <span>React</span>                               
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-brands fa-node"></i>
+                                <span>Node js</span>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-solid fa-database"></i>
+                                <span>PostGreSQL</span>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Git</span>
+                            </div>
+    
+
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <section class="curriculum"  id="curriculum">
+
+            <h2>Curriculum</h2>
+
+            <div class="fila">
+
+                <div class="columna izq">
+
+                    <h3>Educación</h3>
+
+                    <div class="izq item">
+
+                        <h4>Producción musical</h4>
+                        <span class="nombre">Deejay academy</span>
+                        <span class="tiempo">2019</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim repudiandae pariatur deserunt earum animi fugiat, voluptates, accusantium rem quos at omnis dolores unde! Aspernatur corporis aut eveniet repudiandae quasi natus distinctio.</p>
+
+                       
+                       
+
+                    </div>
+
+                    <div class="izq item">
+
+                        <h4>Técnico laboral en edición, grabación, mezcla y masterización de sonido</h4>
+                        <span class="nombre">DNA music</span>
+                        <span class="tiempo">2021-2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim repudiandae pariatur deserunt earum animi fugiat, voluptates, accusantium rem quos at omnis dolores unde! Aspernatur corporis aut eveniet repudiandae quasi natus distinctio.</p>
+
+
+                       
+
+                    </div>
+
+                    <div class="izq item">
+
+                        <h4>Programación web full-Stack y ciencias de computación.</h4>
+                        <span class="nombre">Academlo</span>
+                        <span class="tiempo">2022-2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim repudiandae pariatur deserunt earum animi fugiat, voluptates, accusantium rem quos at omnis dolores unde! Aspernatur corporis aut eveniet repudiandae quasi natus distinctio.</p>
+
+                       
+                       
+
+                    </div>
+
+                </div>
+
+                <div class="columna der">
+
+                    <h3>Experiencia laboral</h3>
+
+                    <div class="der item">
+
+                        <h4>Administrador</h4>
+                        <span class="nombre">Punto del sabor</span>
+                        <span class="tiempo">Abril 2020 - Enero 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim repudiandae pariatur deserunt earum animi fugiat, voluptates, accusantium rem quos at omnis dolores unde! Aspernatur corporis aut eveniet repudiandae quasi natus distinctio.</p>
+
+                       
+                       
+
+                    </div>
+
+                    <div class="der item">
+
+                        <h4>Dueño y administrador</h4>
+                        <span class="nombre">La delicia</span>
+                        <span class="tiempo">Septiembre 2019 - Marzo 2020</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim repudiandae pariatur deserunt earum animi fugiat, voluptates, accusantium rem quos at omnis dolores unde! Aspernatur corporis aut eveniet repudiandae quasi natus distinctio.</p>
+
+                      
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="portafolio" id="portafolio">
+
+            <div>
+                <div class="contenido-seccion">
+                    <h2>Portafolio</h2>
+                    <div class="galeria">
+
+                        <a href="https://classy-melomakarona-991d77.netlify.app">
+                            <div class="proyecto">
+                                <img src="./assets/img/Coctel-app.png" alt="">
+                                <div class="overlay">
+                                    <h3>Drink app</h3>
+                                    <p>HTML, CSS, JS, React</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://final-2lrw.vercel.app">
+                            <div class="proyecto">
+                                <img src="./assets/img/E-commerce.png" alt="">
+                                <div class="overlay">
+                                    <h3> E-commerce </h3>
+                                    <p> HTML, CSS, JS, React</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://jovial-custard-3869be.netlify.app">
+                            <div class="proyecto">
+                                <img src="./assets/img/Random-user.png" alt="">
+                                <div class="overlay">
+                                    <h3> Random user </h3>
+                                    <p> HTML, CSS, JS, React</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="contacto"  id="contacto">
+            <div class="contenido-seccion">
+                <div>
+                    <h2>Contacto</h2>
+                </div>
+                <div class="fila">
+
+                    <div class="columna">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Correo electrónico ">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar <i class="fa-regular fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+
+                    <div class="columna">
+
+                        <img src="./assets/img/Ubicacion.png" alt="">
+                        <div class="info">
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Bogota D.C, Colombia
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Whatsapp: +57 304 333 9191
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Correo electrónico: santiago.co0711@gmail.com 
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="#inicio"  class="flecha">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+
+            <div class="links-redes" >
+                <a href="https://github.com/santiagoo-ortiz"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/ivan-santiago-cubides-ortiz-70180724b"> <i class="fa-brands fa-linkedin"></i> </a>
+            </div>
+        </footer>
+
+        <script src="./assets/js/script.js" ></script>
 
 </body>
 

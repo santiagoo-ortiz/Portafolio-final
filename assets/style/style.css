@@ -13,7 +13,6 @@
 
   .header-cont{
     background-color: black;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -54,9 +53,9 @@
     color: #71e6e6;
   }
 
-  .font-bars{
+  .nav-responsive{
     background-color: #4ea1a1;
-    color: white;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -130,7 +129,7 @@
 }
 
 .sobre-mi .contenido-seccion {
-  max-width: 110px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -145,22 +144,313 @@
   font: 18px;
   line-height: 22px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.sobre-mi button {
+.sobre-mi .contenido-seccion p span{
+  color:#71e6e6;
+  font-weight: bold;
+}
+
+.sobre-mi button{
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #fff;
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
-  color: white;
+  color: #fff;
+  position: relative;
   z-index: 10;
 }
 
-.sobre-mi button .overlay {
+.sobre-mi button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4ea1a1;
+  z-index: -1;
+  transition: 1s;
+}
+
+.sobre-mi button:hover .overlay{
+  width: 100%;
+}
+
+
+
+.habilidades {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+.habilidades .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.habilidades .contenido-seccion h2 {
+  font-size: 48px;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.habilidades .fila{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.habilidades .fila .columna{
+  width: 100%;
+}
+.habilidades .fila .columna h3{
+  font-size: 28px;
+  font-family: 'Ubuntu';
+  margin-bottom: 40px;
+  color:#71e6e6;
+
+}
+
+.habilidades .fila .columna .contenedor-habilidades{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.habilidades .fila .columna .contenedor-habilidades .skill{
+  width: 100px;
+  height: 100px;
+  background-color: #252A2E;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.habilidades .fila .columna .contenedor-habilidades .skill:hover{
+  background-color:#71e6e6;
+}
+
+.habilidades .fila .columna .contenedor-habilidades .skill i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+
+.curriculum {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.curriculum  h2 {
+  font-size: 48px;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.curriculum .fila{
+  display: flex
+}
+
+.curriculum .fila .columna{
+  width: 49%;
+  padding: 0 20px;
+}
+
+.curriculum .fila .columna h3 {
+  font-size: 28px;
+  font-family: "Ubuntu";
+  margin-bottom: 25px;
+}
+
+
+
+.curriculum .fila .izq{
+  border-right: 2px solid rgb(27, 27, 27);
+}
+.curriculum .fila .der{
+  border-left: 2px solid rgb(27, 27, 27);
+}
+
+
+.curriculum .fila .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color:rgb(27, 27, 27);
+  position: relative;
+}
+
+.curriculum .fila .item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.curriculum .fila .item .nombre {
+  color: #71e6e6;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.curriculum .fila .item .tiempo {
+  display: block;
+  color: #71e6e6;
+  margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+  line-height: 20px;
+}
+
+.portafolio {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+.portafolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.portafolio  h2 {
+  font-size: 48px;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.portafolio .galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portafolio .galeria .proyecto{
+  position: relative;
+  max-width: 500px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.portafolio .galeria .proyecto h3 {
+  color:#fff
+}
+.portafolio .galeria .proyecto p {
+  color:#fff
+}
+
+.portafolio .galeria .proyecto img {
+  width: 100%;
+  display: block;
+}
+
+
+.portafolio .galeria .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(86, 175, 175, 0.8),rgba(86, 175, 175, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.portafolio .galeria .proyecto .overlay h3 {
+  margin-bottom: 30px;
+  transition: 1s;
+}
+
+.portafolio .galeria .proyecto .overlay:hover {
+  opacity: 1;
+}
+
+
+
+.contacto {
+  background-color: black;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contacto .contenido-seccion h2 {
+  font-size: 48px;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.contacto .fila {
+  display: flex;
+}
+
+.contacto .columna {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.contacto .columna input, .contacto .columna textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color:#141719;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contacto button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  }
+
+.contacto button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -168,9 +458,135 @@
   height: 100%;
   background-color: #71e6e6;
   z-index: -1;
-  transition: 1s;
+  transition: 1s;  
 }
 
-.sobre-mi button:hover .overlay {
+.contacto button:hover .overlay {
   width: 100%;
+}
+
+.contacto .columna img {
+  width: 100%;
+}
+
+.contacto .columna .info {
+  position: absolute;
+  background-color: #141719;
+  padding: 20px;
+  width: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.contacto .columna .info ul {
+  list-style: none;
+}
+.contacto .columna .info ul li{
+  margin-bottom: 20px;
+}
+.contacto .columna .info ul li i{
+  color: #71e6e6;
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+footer {
+  background-color: #131517;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .links-redes {
+  margin-bottom: 20px;
+
+}
+
+footer .links-redes a {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .3s;
+}
+
+footer .flecha {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1CB698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+
+
+
+
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  .nav-responsive{
+      display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: black;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      padding: 10px 0;
+  }
+}
+
+@media screen and (max-width:700px){
+ 
+  .curriculum .fila{
+      display: block;
+  }
+  .curriculum .fila .columna{
+      width: 90%;
+  }
+  .curriculum .fila .derecha{
+      margin-left: 20px;
+  }
+
+  .portafolio .galeria{
+      display: block;
+      width: 100%;
+  }
+  .portafolio .galeria .proyecto{
+      max-width: 100%;
+  }
+  .portafolio .galeria .proyecto img{
+      width: 100%;
+  }
+  .contacto .fila{
+      display: block;
+  }
+  .contacto .fila .columna{
+      width: 100%;
+  }
 }
